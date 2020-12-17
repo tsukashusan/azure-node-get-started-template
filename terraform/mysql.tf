@@ -37,3 +37,10 @@ resource "azurerm_mysql_firewall_rule" "example" {
   end_ip_address      = var.mysql_firewall_rule_send_ip_address
 }
 
+resource "azurerm_mysql_database" "example" {
+  name                = var.mysql_database_name
+  resource_group_name = azurerm_resource_group.example.name
+  server_name         = azurerm_mysql_server.example.name
+  charset             = var.mysql_database_charset
+  collation           = var.mysql_database_collation
+}

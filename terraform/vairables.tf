@@ -40,7 +40,7 @@ variable "mysql_server_name" {
 
 variable "mysql_administrator_login" {
   type    = string
-  default = "mysqladministrator"
+  default = "mysqladminuser"
 }
 
 variable "mysql_administrator_login_password" {
@@ -106,4 +106,19 @@ variable "mysql_firewall_rule_start_ip_address" {
 variable "mysql_firewall_rule_send_ip_address" {
   type    = string
   default = "40.113.200.201"
+}
+
+variable "mysql_database_name" {
+  type    = string
+  default = "sampel_db"
+}
+
+variable "mysql_database_charset" {
+  type    = string
+  default = "utf8mb4"
+}
+
+variable "mysql_database_collation" {
+  type    = string
+  default = "utf8mb4"
 }
