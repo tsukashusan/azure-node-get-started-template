@@ -1,8 +1,3 @@
-resource "azurerm_resource_group" "example" {
-  name     = var.resource_group
-  location = var.location
-}
-
 resource "azurerm_mysql_server" "example" {
   name                = var.mysql_server_name
   location            = azurerm_resource_group.example.location
