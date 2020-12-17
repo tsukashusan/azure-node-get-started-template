@@ -53,10 +53,10 @@ function insertjson(json) {
 const mysql = require('mysql');
 const pool  = mysql.createPool({
     connectionLimit : 10,
-    host            : 'mysqljapanwestsmc.mysql.database.azure.com',
-    user            : 'saadmin@mysqljapanwestsmc',
-    password        : '1qaz@wsx3edC',
-    database        : 'sample_db',
+    host            : 'xxxxxxxxxxxx',
+    user            : 'xxxxxxxxxxxx',
+    password        : 'xxxxxxxx',
+    database        : 'xxxxxxxxx',
     port: 3306,
     ssl  : {
         // DO NOT DO THIS
