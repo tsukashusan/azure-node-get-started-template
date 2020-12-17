@@ -120,5 +120,5 @@ variable "mysql_database_charset" {
 
 variable "mysql_database_collation" {
   type    = string
-  default = "utf8mb4"
+  default = "utf8mb4_general_ci"
 }
